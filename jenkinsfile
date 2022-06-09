@@ -30,5 +30,13 @@ npm test'''
                 )
             }
         }
+         stage ('Exec npm publish') {
+            steps {
+                rtNpmPublish (
+                    tool: 'nodejs', // Tool name from Jenkins configuration
+                    deployerId: "practice"
+                )
+            }
+        }
     }
 }
