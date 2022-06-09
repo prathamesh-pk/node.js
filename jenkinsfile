@@ -23,9 +23,9 @@ npm test'''
             steps{
                 rtMavenDeployer(
                     id: 'spc',
-                    server: 'jfrog',
+                    serverId: 'jfrog',
                     releaseRepo: 'maven-libs-release-local',
-                    snapshotrepo: 'maven-libs-snapshot-local',
+                    snapshotRepo: 'maven-libs-snapshot-local',
                     deployArtifacts: 'true',
                 )
             }
