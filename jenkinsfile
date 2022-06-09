@@ -22,7 +22,7 @@ npm test'''
        stage('diployer'){
             steps{
                 rtNpmDeployer(
-                    id: 'practice',
+                    id: 'npm',
                     serverId: 'jfrog',
                     repo: 'practice'
                 )
@@ -32,7 +32,7 @@ npm test'''
             steps {
                 rtNpmPublish (
                     tool: 'nodejs', // Tool name from Jenkins configuration
-                    deployerId: "practice"
+                    deployerId: "npm"
                 )
             }
         }
