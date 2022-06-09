@@ -21,7 +21,7 @@ npm test'''
         }
         stage('artifact-deployer'){
             steps{
-                rtMavenDeployer(
+                rtNpmDeployer(
                     id: 'spc',
                     serverId: 'jfrog',
                     releaseRepo: 'maven-libs-release-local',
