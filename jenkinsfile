@@ -19,14 +19,12 @@ npm test'''
         
             }
         }
-        stage('artifact-deployer'){
+       stage('diployer'){
             steps{
                 rtNpmDeployer(
-                    id: 'spc',
+                    id: 'practice',
                     serverId: 'jfrog',
-                    releaseRepo: 'maven-libs-release-local',
-                    snapshotRepo: 'maven-libs-snapshot-local',
-                    deployArtifacts: 'true',
+                    repo: 'practice'
                 )
             }
         }
