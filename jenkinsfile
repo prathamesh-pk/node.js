@@ -24,7 +24,7 @@ npm test'''
                 rtNpmDeployer(
                     id: 'tiger',
                     serverId: 'jfrog',
-                    repo: 'practice'
+                    repo: 'maven-npm'
                 )
             }
         }
