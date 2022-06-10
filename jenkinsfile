@@ -31,7 +31,7 @@ npm test'''
          stage ('Exec npm publish') {
             steps {
                 rtNpmPublish (
-                    tool: 'jfrog', // Tool name from Jenkins configuration
+                    tool: 'npm', // Tool name from Jenkins configuration
                     deployerId: "tiger"
                 )
             }
