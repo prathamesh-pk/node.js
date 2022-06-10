@@ -19,22 +19,22 @@ npm test'''
         
             }
         }
-   //    stage('diployer'){
-   //         steps{
-   //             rtNpmDeployer(
-   //                 id: 'tiger',
-     //               serverId: 'jfrog',
-     //               repo: 'practice'
-      //          )
-      //      }
-       // }
-      //   stage ('Exec npm publish') {
-       //     steps {
-       //         rtNpmPublish (
-       //             tool: 'npm', // Tool name from Jenkins configuration
-       //             deployerId: "tiger"
-       //         )
-       //     }
-      //  }
+       stage('diployer'){
+            steps{
+                rtNpmDeployer(
+                    id: 'tiger',
+                    serverId: 'jfrog',
+                    repo: 'practice'
+                )
+            }
+        }
+         stage ('Exec npm publish') {
+            steps {
+                rtNpmPublish (
+                    tool: 'npm', // Tool name from Jenkins configuration
+                    deployerId: "tiger"
+                )
+            }
+        }
     }
 }
